@@ -23,12 +23,12 @@ export default function Payment() {
       return
     }
     if(activeTab === 1){
-      const priceID = "price_1GqIC8HYgolSBA35zoTTN2Zl"
+      const priceID = "price_1OEuhdKqydvuV58jbAESweFQ"
       const getCheckoutURL = await getCheckoutUrl(app, priceID)
       router.push(getCheckoutURL)
     }
     else{
-     const priceID = "price_1HCUD4HYgolSBA35icTHEXd5"
+     const priceID = "price_1OEuk0KqydvuV58j8qaXxdFM"
       const getCheckoutURL = await getCheckoutUrl(app, priceID)
       router.push(getCheckoutURL)
     }
