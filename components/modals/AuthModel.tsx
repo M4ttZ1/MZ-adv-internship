@@ -152,7 +152,7 @@ export default function AuthModal() {
               <input
                 onChange={(e) => setEmail(e.target.value)}
                 className="auth__main--input"
-                type="text"
+                type="email"
                 placeholder="Email Address"
               />
               <input

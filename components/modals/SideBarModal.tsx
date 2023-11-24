@@ -34,8 +34,8 @@ export default function SideBarModal() {
     }
   }
 
-  function handleSignIn() {
-    signInWithEmailAndPassword(auth, email, password)
+  async function handleSignIn() {
+     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         const user = userCredential.user;
         dispatch(closeLoginModal());
@@ -56,7 +56,7 @@ export default function SideBarModal() {
         alert(`Sign-in failed because of ${errorMessage}`);
       });
   }
-  async function handleSignUp() {
+  function handleSignUp() {
     const userCredentials = createUserWithEmailAndPassword(
       auth,
       email,
@@ -144,11 +144,11 @@ export default function SideBarModal() {
             <div className="auth__separator">
               <span className="auth__separator--text">or</span>
             </div>
-            <form className="auth__main--form">
+            <div className="auth__main--form">
               <input
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={(e) => {setEmail(e.target.value)}}
                 className="auth__main--input"
-                type="text"
+                type="email"
                 placeholder="Email Address"
               />
               <input
@@ -163,7 +163,7 @@ export default function SideBarModal() {
               >
                 <span>{!signup ? "Login" : "Sign up"}</span>
               </button>
-            </form>
+            </div>
           </div>
           <div className="auth__forgot--password">Forgot your password?</div>
           <button
