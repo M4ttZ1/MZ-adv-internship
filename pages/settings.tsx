@@ -5,10 +5,14 @@ import { useDispatch, useSelector } from "react-redux";
 import { openLoginModal } from "@/Redux/ModalSlice";
 import { auth, initFirebase } from "@/firebase";
 import { getPremiumStatus } from "@/checkStatus";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import AuthModal from "@/components/modals/AuthModel";
 
 export default function settings() {
+  const test = async () => {
+    
+  }
+  test()
   const user = useSelector((state: any) => state.user);
   const dispatch = useDispatch();
   const router = useRouter()
@@ -20,7 +24,7 @@ export default function settings() {
   useEffect(() => {
     const checkPremium = async () => {
       const newPremiumStatus = auth.currentUser
-        ? await getPremiumStatus(app)
+        ? await getPremiumStatus(app) 
         : false;
       setIsPremium(newPremiumStatus);
     };

@@ -113,7 +113,9 @@ export default function AuthModal() {
         <div className="w-[400px] bg-[#fff] relative rounded-lg flex flex-col justify-center ">
           <div className="auth__content w-full">
             <div className="text-[20px] font-bold text-center text-black mb-6">
-              {changePassword ? "Reset your password" : (`${!signup ? "Login" : "Sign up"} to Summarist`)}
+              {changePassword
+                ? "Reset your password"
+                : `${!signup ? "Login" : "Sign up"} to Summarist`}
             </div>
             {!signup && (
               <>

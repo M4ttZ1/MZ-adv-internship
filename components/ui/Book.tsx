@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { AiFillStar,AiOutlineClockCircle } from 'react-icons/ai'
 import { useSelector } from 'react-redux'
 
-// const { getAudioDurationInSeconds } = require('get-audio-duration')
 interface Book {
     id: string
     author: string

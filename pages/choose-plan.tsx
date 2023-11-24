@@ -172,7 +172,7 @@ export default function Payment() {
               <div className="plan__disclaimer">
                 {activeTab === 0
                   ? "30-day money back guarantee, no questions asked."
-                  : "Cancel your trial at any time before it ends, and you won’t be charged."}
+                  : "Cancel your trial at any time before it ends, and you won't be charged."}
               </div>
             </div>
             <Accordion />
