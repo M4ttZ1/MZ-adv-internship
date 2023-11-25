@@ -148,7 +148,7 @@ export default function AuthModal() {
             <div className="auth__separator">
               <span className="auth__separator--text">or</span>
             </div>
-            <form className="auth__main--form">
+            <div className="auth__main--form">
               <input
                 onChange={(e) => setEmail(e.target.value)}
                 className="auth__main--input"
@@ -167,7 +167,7 @@ export default function AuthModal() {
               >
                 <span>{!signup ? "Login" : "Sign up"}</span>
               </button>
-            </form>
+            </div>
           </div>
           <div className="auth__forgot--password">Forgot your password?</div>
           <button

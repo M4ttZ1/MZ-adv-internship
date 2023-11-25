@@ -835,6 +835,10 @@ button:disabled {
   width: 40%;
 }
 
+.play__button{
+  cursor:pointer;
+}
+
 @media (max-width: 768px) {
 
   .selected__book--sub-title {
@@ -948,6 +952,7 @@ button:disabled {
   width: 100%;
   height: 100%;
   display: block;
+  cursor: pointer;
 }
 
 .for-you__recommended--books-link {
@@ -1641,7 +1646,8 @@ body::-webkit-scrollbar {
 
 .btn.settings__upgrade--btn {
   width: -moz-fit-content;
-  width: fit-content
+  width: fit-content;
+  cursor: pointer;
 }
 
 .settings__login--wrapper {

@@ -99,7 +99,7 @@ export default function Selected() {
                 <div className="selected__book--author">{data?.author}</div>
                 <div className="selected__book--duration-wrapper">
                   <div className="selected__book--icon" onClick={hanldeReading}>
-                    <BsFillPlayCircleFill size={40} />
+                    <BsFillPlayCircleFill className="play__button" size={40} />
                   </div>
                   <div className="selected__book--duration">
                     {formatTime(duration)}
